@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<html >
+
+<head>
+<title> This is Login Page prototype for Web Programming </title>
+<style>
+body {
+  font-family: Arial;
+  color: black;
+}
+
+h1{
+
+	font-family:Segoe UI;
+	color:#707070;
+	font-weight:bold;
+	font-size:40px;
+	font-style:italic;
+	}
+	
+.title{
+	font-size:60px;
+	font-family:Consolas;
+	color:black;
+	text-shadow:1px 1px 2px	gray;
+	}
+.split {
+  height: 100%;
+  width: 50%;	
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.left {
+  left: 0;
+  background-image: url('simplebackground.png');
+  background-size:cover;
+  object-fit:contain;
+
+}
+
+.right {
+  right: 0;
+  background: linear-gradient(to bottom,#FEFFFF,#97FFF8);
+}
+
+.centered {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.centered img {
+  width: 150px;
+  border-radius: 50%;
+}
+
+.text
+{
+	color:black;
+	box-shadow: 2px 2px 3px gray;
+	border: 3px solid #707070;
+	border-width:1.5px;
+	padding: 12px 20px;
+	margin: 8px 0;
+	box-sizing: border-box;
+	border-radius: 10px;
+}
+
+.button{
+ border:none;
+ font-weight:bold;
+  background-color:#2474D4;
+  padding: 12px 20px;
+  margin: 8px 0;
+  font-size:30px;
+  color:white;
+  border-radius: 30px;
+  width:200px;
+  height:60px;
+  }
+ .button:hover {
+  background-color: #256FC7;
+} 
+.button:active {
+  background-color: #164B8A;
+} 
+  
+</style>
+</head>
+<body>
+
+<div class="split left">
+  <div class="centered">
+		
+	<p class="title"> Welcome to Lyrica ! </p>
+   
+  </div>
+</div>
+
+<div class="split right">
+  <div class="centered">
+  <br><br><br><br><br><br>
+	<h1> Login </h1>
+    <form>
+		<input class="text" type="text"  placeholder="Username"name="username" size="50"><br>
+		<input class="text" type="password" placeholder="Password" name="password" size="50"><br><br>
+		<input type="submit"class="button" name="login" value="Log in">
+	</form>
+  </div>
+</div>
+     
+</body>
+</html> 
